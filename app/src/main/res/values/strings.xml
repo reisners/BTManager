@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BT Manager</string>
+    <string name="title_pairedbluetoothdevice_detail">Paired Bluetooth Device Detail</string>
+</resources>
