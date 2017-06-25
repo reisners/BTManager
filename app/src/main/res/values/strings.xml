@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BT Manager</string>
     <string name="title_pairedbluetoothdevice_detail">Paired Bluetooth Device Detail</string>
+    <string name="auth_failed">Authentication failed</string>
 </resources>

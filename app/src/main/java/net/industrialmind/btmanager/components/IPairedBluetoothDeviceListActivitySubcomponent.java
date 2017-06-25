@@ -11,6 +11,7 @@ import dagger.android.AndroidInjector;
  * Created by Stefan on 01.06.2017.
  */
 
+@Subcomponent
 public interface IPairedBluetoothDeviceListActivitySubcomponent extends AndroidInjector<PairedBluetoothDeviceListActivity> {
 
     @Subcomponent.Builder
