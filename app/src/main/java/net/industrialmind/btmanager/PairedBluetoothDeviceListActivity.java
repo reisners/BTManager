@@ -19,6 +19,8 @@ import net.industrialmind.btmanager.device.BluetoothDeviceService;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * An activity representing a list of Paired Bluetooth Devices. This activity
  * has different presentations for handset and tablet-size devices. On
@@ -37,11 +39,15 @@ public class PairedBluetoothDeviceListActivity extends AppCompatActivity {
      */
     private boolean mTwoPane;
 
-    private BluetoothDeviceService btService;
+    @Inject
+    BluetoothDeviceService btService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ((BTManagerApplication)getApplication()).getBTComponent().inject(this);
+
         setContentView(R.layout.activity_pairedbluetoothdevice_list);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
