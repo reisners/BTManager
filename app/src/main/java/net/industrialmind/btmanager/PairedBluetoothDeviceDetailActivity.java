@@ -59,7 +59,7 @@ public class PairedBluetoothDeviceDetailActivity extends AppCompatActivity {
                     getIntent().getStringExtra(PairedBluetoothDeviceDetailFragment.ARG_ITEM_ID));
             PairedBluetoothDeviceDetailFragment fragment = new PairedBluetoothDeviceDetailFragment();
             fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.pairedbluetoothdevice_detail_container, fragment)
                     .commit();
         }
