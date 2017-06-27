@@ -45,8 +45,6 @@ public class PairedBluetoothDeviceDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ((BTManagerApplication)getActivity().getApplication()).getBTComponent().inject(this);
-
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the bluetooth device specified by the fragment
             // arguments. In a real-world scenario, use a Loader
