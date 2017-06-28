@@ -13,6 +13,8 @@ import net.industrialmind.btmanager.device.BluetoothDeviceService;
 
 import javax.inject.Inject;
 
+import dagger.android.AndroidInjection;
+
 /**
  * A fragment representing a single Paired Bluetooth Device detail screen.
  * This fragment is either contained in a {@link PairedBluetoothDeviceListActivity}
@@ -43,6 +45,7 @@ public class PairedBluetoothDeviceDetailFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {

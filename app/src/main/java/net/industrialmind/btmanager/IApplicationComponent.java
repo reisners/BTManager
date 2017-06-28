@@ -12,4 +12,6 @@ import dagger.android.AndroidInjectionModule;
 @Component(modules={BTDeviceModule.class, AndroidInjectionModule.class})
 public interface IApplicationComponent {
     void inject(BTManagerApplication application);
+    void inject(PairedBluetoothDeviceListActivity activity);
+    void inject(PairedBluetoothDeviceDetailFragment fragment);
 }
