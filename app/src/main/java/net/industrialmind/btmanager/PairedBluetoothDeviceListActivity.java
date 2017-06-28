@@ -28,6 +28,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import dagger.android.AndroidInjection;
+
 /**
  * An activity representing a list of Paired Bluetooth Devices. This activity
  * has different presentations for handset and tablet-size devices. On
@@ -55,6 +57,7 @@ public class PairedBluetoothDeviceListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pairedbluetoothdevice_list);
 
